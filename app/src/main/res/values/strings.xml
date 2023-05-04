@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Pet Finder</string>
-    <string name="feed_and_find">Feed and Find:</string>
-    <string name="a_pet_monitoring_system_on_nembedded_collar_technology">A pet monitoring system on\nembedded collar technology.</string>
+    <string name="feed_and_find"><b>Feed and Find:</b>\nA pet monitoring system on\nembedded feeder technology.</string>
     <string name="about">ABOUT</string>
     <string name="about_info">The pet tracker developed by team Koinu is a cutting-edge mobile application that offers a comprehensive suite of features to help pet owners monitor the whereabouts, activity, and health of their beloved furry friends. Developed as part of The Feed and Find Initiative, this innovative app harnesses the power of embedded collar technology to provide real-time tracking of pets.\n\nWith this pet tracker, pet owners can stay up-to-date on the behavior and activity levels of their pets, enabling them to better understand and respond to the needs of their pets. In addition, the app offers access to a pet social network, allowing pet owners to connect with other pet lovers and share experiences and advice.</string>
     <string name="credits">CREDITS</string>
