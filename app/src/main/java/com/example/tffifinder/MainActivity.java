@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(counter == 100) {
                     t.cancel();
-                    Intent intent = new Intent(MainActivity.this, Credits.class);
+                    Intent intent = new Intent(MainActivity.this, Home.class);
                     startActivity(intent);
                     finish();
                 }

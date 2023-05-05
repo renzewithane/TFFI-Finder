@@ -1,11 +1,24 @@
 <resources>
     <string name="app_name">Pet Finder</string>
-    <string name="feed_and_find"><b>Feed and Find:</b>\nA pet monitoring system on\nembedded feeder technology.</string>
+    <string name="feed_and_find"><b>Feed and Find:</b>\nA pet monitoring system on\nembedded collar technology.</string>
+    <string name="name_assigned">Name Goes Here</string>
+    <string name="pet_breed">Pet Breed Goes Here</string>
     <string name="about">ABOUT</string>
     <string name="about_info">The pet tracker developed by team Koinu is a cutting-edge mobile application that offers a comprehensive suite of features to help pet owners monitor the whereabouts, activity, and health of their beloved furry friends. Developed as part of The Feed and Find Initiative, this innovative app harnesses the power of embedded collar technology to provide real-time tracking of pets.\n\nWith this pet tracker, pet owners can stay up-to-date on the behavior and activity levels of their pets, enabling them to better understand and respond to the needs of their pets. In addition, the app offers access to a pet social network, allowing pet owners to connect with other pet lovers and share experiences and advice.</string>
     <string name="credits">CREDITS</string>
-    <string name="credits_info"><b>The Feed and Find Initiative Team</b>\nCheryl Marie Chomis Alimba\nHyrum Roi Sapurco Bravo\nJasper Daile Tuibeo Corpuz\nJohn Homer Sayno Dar\nAr-jay De La Fuente\nKirby Ann Aycardo De Los Reyes\nAngelo Millares Echano\nArriana Mae Vargas Malubay\nIvan Meir Pablo Morada\nRenze Meinard Mortiga\nWendee Davillo Postre\nChristine Magana Toral\nKai Lapak Yaneza\n\n<b>Team Koinu</b>\nCheryl Marie Chomis Alimba\nAngelo Millares Echano\nArriana Mae Vargas Malubay\nIvan Meir Pablo Morada\nRenze Meinard Mortiga\nChristine Magana Toral\nKai Lapak Yaneza\n\n<b>Lead Wiring Team</b>\nAngelo Millares Echano\nKai Lapak Yaneza\n\n<b>Mobile Application Developers</b>\nCheryl Marie Chomis Alimba\nArriana Mae Vargas Malubay\nIvan Meir Morada\n\n<b>Lead Researchers</b>\nRenze Meinard Mortiga\nChristine Magana Toral\n\n<b>Special Thanks To:</b>\nTeam Lumos\nThe Institute of Computer Studies\nCamarines Norte State College\n3A Glass and Aluminum Works and Services\nand\nProfessor Marc Lester Acunin
-
-
- </string>
+    <string name="credits_info"><b>The Feed and Find Initiative Team</b>\nCheryl Marie Chomis Alimba\nHyrum Roi Sapurco Bravo\nJasper Daile Tuibeo Corpuz\nJohn Homer Sayno Dar\nAr-jay De La Fuente\nKirby Ann Aycardo De Los Reyes\nAngelo Millares Echano\nArriana Mae Vargas Malubay\nIvan Meir Pablo Morada\nRenze Meinard Mortiga\nWendee Davillo Postre\nChristine Magana Toral\nKai Lapak Yaneza\n\n<b>Team Koinu</b>\nCheryl Marie Chomis Alimba\nAngelo Millares Echano\nArriana Mae Vargas Malubay\nIvan Meir Pablo Morada\nRenze Meinard Mortiga\nChristine Magana Toral\nKai Lapak Yaneza\n\n<b>Lead Wiring Team</b>\nAngelo Millares Echano\nKai Lapak Yaneza\n\n<b>Mobile Application Developers</b>\nCheryl Marie Chomis Alimba\nArriana Mae Vargas Malubay\nIvan Meir Morada\n\n<b>Lead Researchers</b>\nRenze Meinard Mortiga\nChristine Magana Toral\n\n<b>Special Thanks To:</b>\nTeam Lumos\nThe Institute of Computer Studies\nCamarines Norte State College\n3A Glass and Aluminum Works and Services\nand\nProfessor Marc Lester Acunin</string>
+    <string name="logo">logo</string>
+    <string name="app">Feed and Find:</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="strDashboard">Dashboard</string>
+    <string name="strCredits">Credits</string>
+    <string name="strAbout">About</string>
+    <string name="strTrash">Trash</string>
+    <string name="strOther">Other</string>
+    <string name="strFeeder">Feeder</string>
+    <string name="strSetting">Settings</string>
+    <string name="strLogout">Log out</string>
+    <string name="navigation_header">navigation header</string>
+    <string name="my_app">My App</string>
 </resources>

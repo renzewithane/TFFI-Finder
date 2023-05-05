@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:background="@drawable/purple_background"
+    android:padding="30dp"
+    android:gravity="bottom">
+
+    <ImageView
+        android:id="@+id/launcher"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:contentDescription="@string/navigation_header"
+        android:layout_gravity="center"
+        android:src="@drawable/tffi_logo" />
+
+    <TextView
+        android:id="@+id/myApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+</LinearLayout>
