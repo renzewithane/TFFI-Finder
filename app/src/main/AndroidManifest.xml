@@ -12,29 +12,27 @@
         android:theme="@style/Theme.TFFIFinder"
         tools:targetApi="31">
         <activity
+            android:name=".AddPet"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:exported="false" />
         <activity
             android:name=".Credits"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:exported="false" />
         <activity
             android:name=".About"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:exported="false" />
         <activity
-            android:name=".Home"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:name=".DrawerNav"
+            android:exported="false" />
         <activity
             android:name=".PetInfo"
-            android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

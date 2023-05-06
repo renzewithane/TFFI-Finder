@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(counter == 100) {
                     t.cancel();
-                    Intent intent = new Intent(MainActivity.this, Home.class);
+                    Intent intent = new Intent(MainActivity.this, Dashboard.class);
                     startActivity(intent);
                     finish();
                 }

@@ -1,33 +1,20 @@
 package com.example.tffifinder;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.os.Bundle;
-import android.view.View;
 
-public class Credits extends AppCompatActivity {
+import com.example.tffifinder.databinding.ActivityCreditsBinding;
+
+public class Credits extends DrawerNav {
+
+    ActivityCreditsBinding activityCreditsBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_credits);
+        activityCreditsBinding = ActivityCreditsBinding.inflate(getLayoutInflater());
+        setContentView(activityCreditsBinding.getRoot());
 
-        Toolbar myToolbar = findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
+        allocateActivityTitle("Credits");
 
-        // Set the custom back arrow as the navigation icon
-        myToolbar.setNavigationIcon(R.drawable.ic_arrow_back);
-
-        // Set a click listener on the navigation icon
-        myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
-    }
-
-    public void setSupportActionBar(Toolbar myToolbar) {
     }
 }
