@@ -35,7 +35,6 @@ public class DrawerNav extends AppCompatActivity implements NavigationView.OnNav
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
-        navigationView.setCheckedItem(R.id.nav_dashboard);
     }
 
     @Override
@@ -53,9 +52,7 @@ public class DrawerNav extends AppCompatActivity implements NavigationView.OnNav
                 break;
 
             case R.id.nav_about:
-//                startActivity(new Intent(DrawerNav.this, About.class));
-                Toast.makeText(DrawerNav.this, "About", Toast.LENGTH_SHORT).show();
-
+                startActivity(new Intent(DrawerNav.this, About.class));
                 break;
 
             case R.id.nav_statistics:
