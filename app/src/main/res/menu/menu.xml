@@ -4,22 +4,18 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-
         <item
             android:id="@+id/nav_dashboard"
             android:icon="@drawable/ic_dashboard"
             android:title="@string/strDashboard"/>
-
         <item
             android:id="@+id/nav_credits"
             android:icon="@drawable/ic_credits"
             android:title="@string/strCredits"/>
-
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_about"
             android:title="@string/strAbout"/>
-
         <item
             android:id="@+id/nav_statistics"
             android:icon="@drawable/ic_statistics"

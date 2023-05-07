@@ -49,16 +49,17 @@ public class DrawerNav extends AppCompatActivity implements NavigationView.OnNav
 
             case R.id.nav_credits:
                 startActivity(new Intent(DrawerNav.this, Credits.class));
-                overridePendingTransition(0,0);
+
                 break;
 
             case R.id.nav_about:
-                startActivity(new Intent(DrawerNav.this, About.class));
-                overridePendingTransition(0,0);
+//                startActivity(new Intent(DrawerNav.this, About.class));
+                Toast.makeText(DrawerNav.this, "About", Toast.LENGTH_SHORT).show();
+
                 break;
 
             case R.id.nav_statistics:
-                Toast.makeText(DrawerNav.this, "Trash", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DrawerNav.this, "Statistics", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.nav_settings:

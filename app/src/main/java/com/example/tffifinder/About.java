@@ -14,6 +14,6 @@ public class About extends DrawerNav {
         activityAboutBinding = ActivityAboutBinding.inflate(getLayoutInflater());
         setContentView(activityAboutBinding.getRoot());
 
-        allocateActivityTitle("Dashboard");
+        allocateActivityTitle("About");
     }
 }
