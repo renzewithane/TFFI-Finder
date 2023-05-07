@@ -1,5 +1,6 @@
 package com.example.tffifinder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -29,5 +30,10 @@ public class PetInfo extends AppCompatActivity {
     }
 
     public void setSupportActionBar(Toolbar myToolbar) {
+    }
+
+    public void buttonClick(View view) {
+        Intent intent = new Intent(this, EditInfo.class);
+        startActivity(intent);
     }
 }
