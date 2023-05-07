@@ -36,11 +36,6 @@ public class EditInfo extends AppCompatActivity {
             }
         });
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, items);
-        AutoCompleteTextView textView = findViewById(R.id.autoCompleteTextView);
-        textView.setAdapter(adapter);
-
         editText = findViewById(R.id.editText);
 
         editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
