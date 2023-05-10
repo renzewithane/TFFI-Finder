@@ -61,5 +61,9 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="health_informationLabel">Health Information</string>
+    <string name="vet_contact">Vet Contact:</string>
+    <string name="cancelBtn">CANCEL</string>
+    <string name="submitBtn">SUBMIT</string>
+    <string name="deviceNum">Device ID: 0001</string>
 
 </resources>
