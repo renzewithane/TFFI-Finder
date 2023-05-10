@@ -26,17 +26,13 @@
         <menu>
             <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/nav_settings"
-                    android:icon="@drawable/ic_settings"
-                    android:title="@string/strSetting"/>
-                <item
                     android:id="@+id/nav_feeder"
                     android:icon="@drawable/ic_feeder"
                     android:title="@string/strFeeder"/>
                 <item
-                    android:id="@+id/nav_logout"
-                    android:icon="@drawable/ic_logout"
-                    android:title="@string/strLogout"/>
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="@string/strSetting"/>
             </group>
         </menu>
     </item>
