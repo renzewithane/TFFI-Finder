@@ -65,5 +65,6 @@
     <string name="cancelBtn">CANCEL</string>
     <string name="submitBtn">SUBMIT</string>
     <string name="deviceNum">Device ID: 0001</string>
+    <string name="updateBtn">UPDATE</string>
 
 </resources>

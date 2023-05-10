@@ -44,6 +44,7 @@ public class DrawerNav extends AppCompatActivity implements NavigationView.OnNav
         switch (menuItem.getItemId()){
 
             case R.id.nav_dashboard:
+                startActivity(new Intent(DrawerNav.this, Dashboard.class));
                 break;
 
             case R.id.nav_credits:
