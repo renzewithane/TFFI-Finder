@@ -35,7 +35,6 @@
             android:layout_gravity="center"/>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/petName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -43,6 +42,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/petName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/name"
@@ -50,7 +50,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/breed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -59,6 +58,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/breed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/breed"
@@ -100,8 +100,16 @@
                 android:textSize="20sp" />
         </RadioGroup>
 
+        <EditText
+            android:id="@+id/bdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="6dp"
+            android:hint="@string/birthdate"/>
+
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/weight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -110,22 +118,12 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/weight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/weight"
                 android:inputType="phone" />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:id="@+id/deviceID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"
-            android:text="@string/deviceNum"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:layout_gravity="start"/>
 
         <TextView
             android:id="@+id/health_Info"
@@ -139,7 +137,6 @@
             android:layout_gravity="center"/>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/allergies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -148,6 +145,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/allergies"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/allergies"
@@ -155,7 +153,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/treats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -164,6 +161,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/treats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/treats"
@@ -171,7 +169,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/restriction"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -180,6 +177,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/medications"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/medications"
@@ -187,7 +185,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/vetName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -196,6 +193,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/vetName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/vet_name"
@@ -203,7 +201,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/vet_contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -212,6 +209,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/vet_contact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/vet_contact"
@@ -230,7 +228,6 @@
             android:layout_gravity="center"/>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/ownerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -238,6 +235,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ownerName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/name"
@@ -245,7 +243,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -255,6 +252,7 @@
             app:layout_constraintTop_toBottomOf="@+id/petName"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/address"
@@ -268,7 +266,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -277,6 +274,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/contact_number"
@@ -284,7 +282,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -293,6 +290,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:boxBackgroundColor="@color/white">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email_address"
