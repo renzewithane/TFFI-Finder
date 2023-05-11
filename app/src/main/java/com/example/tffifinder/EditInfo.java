@@ -3,11 +3,11 @@ package com.example.tffifinder;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
+
 import android.widget.DatePicker;
 import android.widget.EditText;
 
@@ -17,6 +17,7 @@ public class EditInfo extends AppCompatActivity {
     String[] items = new String[]{"Male", "Female"};
     EditText editText;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

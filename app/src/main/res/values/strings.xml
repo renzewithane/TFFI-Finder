@@ -66,5 +66,8 @@
     <string name="submitBtn">SUBMIT</string>
     <string name="deviceNum">Device ID: 0001</string>
     <string name="updateBtn">UPDATE</string>
+    <string name="strTrash">Trash</string>
+    <string name="strLocation">Location</string>
+    <string name="strPet_profile">Pet Profile</string>
 
 </resources>

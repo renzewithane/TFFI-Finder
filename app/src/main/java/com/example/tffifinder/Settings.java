@@ -1,14 +1,34 @@
 package com.example.tffifinder;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.RelativeLayout;
 
-public class Settings extends AppCompatActivity {
+import com.example.tffifinder.databinding.ActivitySettingsBinding;
 
+public class Settings extends DrawerNav {
+
+    ActivitySettingsBinding activitySettingsBinding;
+    RelativeLayout about, logout;
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        activitySettingsBinding = ActivitySettingsBinding.inflate(getLayoutInflater());
+        setContentView(activitySettingsBinding.getRoot());
+
+        allocateActivityTitle("Settings");
+
+        about = findViewById(R.id.about);
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Settings.this, About.class);
+                startActivity(intent);
+            }
+        });
     }
 }

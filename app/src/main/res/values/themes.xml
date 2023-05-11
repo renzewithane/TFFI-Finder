@@ -13,4 +13,10 @@
         <item name="android:statusBarColor">#6823EA</item>
         <!-- Customize your theme here. -->
     </style>
+    
+    <style name="nightModeSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/purple</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
 </resources>

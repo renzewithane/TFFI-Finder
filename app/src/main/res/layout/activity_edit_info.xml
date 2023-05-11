@@ -108,6 +108,15 @@
                     android:textSize="20sp" />
             </RadioGroup>
 
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="6dp"
+                android:hint="@string/birthdate"/>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/weight"
                 android:layout_width="match_parent"

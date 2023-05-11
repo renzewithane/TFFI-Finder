@@ -7,24 +7,10 @@
     android:background="@drawable/purple_background"
     tools:context=".Settings">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#6823EA"
-        android:elevation="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_arrow_back"
-        app:title="Settings"
-        app:titleTextColor="@color/white"/>
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -70,10 +56,114 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/nightModeIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_night_mode"
+                        android:background="@drawable/round_violet_bg"/>
                     
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Night Mode"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/nightModeIcon"/>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:minWidth="50dp"
+                        android:theme="@style/nightModeSwitch"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/notificationIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_notification"
+                        android:background="@drawable/round_bluegreen_bg"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Notification"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/notificationIcon"/>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:minWidth="50dp"
+                        android:theme="@style/nightModeSwitch"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/about"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/aboutIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_about"
+                        android:background="@drawable/round_orange_bg"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="About"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/aboutIcon"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/logout"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/logoutIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_logout"
+                        android:background="@drawable/round_pink_bg"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Log Out"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/logoutIcon"/>
 
                 </RelativeLayout>
 
