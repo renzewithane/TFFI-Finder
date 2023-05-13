@@ -26,7 +26,6 @@
                 android:id="@+id/petPic"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
-                android:layout_marginTop="10dp"
                 app:cardCornerRadius="100dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/petLayout">
@@ -36,7 +35,7 @@
                     android:layout_width="110dp"
                     android:layout_height="110dp"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/yana" />
+                    app:srcCompat="@drawable/profile" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -71,6 +70,7 @@
                 android:textSize="22sp"
                 android:layout_marginTop="45dp"
                 android:layout_marginEnd="20dp"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
