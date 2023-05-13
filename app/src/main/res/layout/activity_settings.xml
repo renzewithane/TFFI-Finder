@@ -7,168 +7,157 @@
     android:background="@drawable/purple_background"
     tools:context=".Settings">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tffi_logo"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="UserName"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="22sp"/>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="40dp"
+            android:padding="15dp"
+            android:background="@drawable/round_white_transbg">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:src="@drawable/tffi_logo"
-                android:layout_marginTop="20dp"/>
-            <TextView
-                android:id="@+id/username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="UserName"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="22sp"/>
-            <TextView
-                android:id="@+id/email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="0dp"
-                android:text="Email"
-                android:textColor="@color/white"
-                android:textSize="15sp"/>
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginTop="40dp"
-                android:padding="15dp"
-                android:background="@drawable/round_white_transbg">
+                android:layout_marginTop="10dp">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/notificationIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_notification"
+                    android:background="@drawable/round_violet_bg"/>
 
-                    <ImageView
-                        android:id="@+id/nightModeIcon"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:padding="12dp"
-                        android:src="@drawable/ic_night_mode"
-                        android:background="@drawable/round_violet_bg"/>
-                    
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:text="Night Mode"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"
-                        android:layout_marginStart="20dp"
-                        android:layout_toEndOf="@+id/nightModeIcon"/>
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:minWidth="50dp"
-                        android:theme="@style/nightModeSwitch"/>
-
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp">
+                    android:layout_centerVertical="true"
+                    android:text="Notification"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/notificationIcon"/>
 
-                    <ImageView
-                        android:id="@+id/notificationIcon"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:padding="12dp"
-                        android:src="@drawable/ic_notification"
-                        android:background="@drawable/round_bluegreen_bg"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:text="Notification"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"
-                        android:layout_marginStart="20dp"
-                        android:layout_toEndOf="@+id/notificationIcon"/>
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:minWidth="50dp"
-                        android:theme="@style/nightModeSwitch"/>
-
-                </RelativeLayout>
-                <RelativeLayout
-                    android:id="@+id/about"
-                    android:layout_width="150dp"
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp">
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="50dp"
+                    android:theme="@style/nightModeSwitch"/>
 
-                    <ImageView
-                        android:id="@+id/aboutIcon"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:padding="12dp"
-                        android:src="@drawable/ic_about"
-                        android:background="@drawable/round_orange_bg"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/about"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:text="About"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"
-                        android:layout_marginStart="20dp"
-                        android:layout_toEndOf="@+id/aboutIcon"/>
+                <ImageView
+                    android:id="@+id/aboutIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_about"
+                    android:background="@drawable/round_bluegreen_bg"/>
 
-                </RelativeLayout>
-                <RelativeLayout
-                    android:id="@+id/logout"
-                    android:layout_width="150dp"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp">
+                    android:layout_centerVertical="true"
+                    android:text="About"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/aboutIcon"/>
 
-                    <ImageView
-                        android:id="@+id/logoutIcon"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:padding="12dp"
-                        android:src="@drawable/ic_logout"
-                        android:background="@drawable/round_pink_bg"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/credits"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:text="Log Out"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"
-                        android:layout_marginStart="20dp"
-                        android:layout_toEndOf="@+id/logoutIcon"/>
+                <ImageView
+                    android:id="@+id/creditsIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_about"
+                    android:background="@drawable/round_orange_bg"/>
 
-                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Credits"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/creditsIcon"/>
 
-            </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/logout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/logoutIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_logout"
+                    android:background="@drawable/round_pink_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Log Out"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/logoutIcon"/>
+
+            </RelativeLayout>
+
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

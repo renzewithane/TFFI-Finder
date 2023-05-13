@@ -11,7 +11,7 @@ import com.example.tffifinder.databinding.ActivitySettingsBinding;
 public class Settings extends DrawerNav {
 
     ActivitySettingsBinding activitySettingsBinding;
-    RelativeLayout about, logout;
+    RelativeLayout about, credits, logout;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -27,6 +27,15 @@ public class Settings extends DrawerNav {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Settings.this, About.class);
+                startActivity(intent);
+            }
+        });
+
+        credits = findViewById(R.id.credits);
+        credits.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Settings.this, Credits.class);
                 startActivity(intent);
             }
         });
