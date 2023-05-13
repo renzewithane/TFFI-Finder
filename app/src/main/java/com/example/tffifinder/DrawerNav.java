@@ -39,7 +39,6 @@ public class DrawerNav extends AppCompatActivity implements NavigationView.OnNav
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-
         drawerLayout.closeDrawer(GravityCompat.START);
         switch (menuItem.getItemId()){
 

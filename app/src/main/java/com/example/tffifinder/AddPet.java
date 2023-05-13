@@ -1,6 +1,7 @@
 package com.example.tffifinder;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
@@ -37,6 +38,20 @@ public class AddPet extends AppCompatActivity {
         vetName = findViewById(R.id.vetName);
         vetContact = findViewById(R.id.vet_contact);
         add = findViewById(R.id.submit);
+
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
+
+        // Set the custom back arrow as the navigation icon
+        myToolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+
+        // Set a click listener on the navigation icon
+        myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         add.setOnClickListener(new View.OnClickListener() {
 
             @Override
