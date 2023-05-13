@@ -72,5 +72,6 @@
     <string name="show_location">Show Location</string>
     <string name="location">Location</string>
     <string name="radar">Radar</string>
+    <string name="todo">todo</string>
 
 </resources>

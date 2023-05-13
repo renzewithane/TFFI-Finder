@@ -76,6 +76,7 @@
                 android:text="@string/about_info"
                 android:textColor="#090909"
                 android:textSize="22sp"
+                android:justificationMode="inter_word"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

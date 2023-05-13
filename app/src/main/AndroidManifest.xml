@@ -19,9 +19,6 @@
             android:name=".Statistics"
             android:exported="false" />
         <activity
-            android:name=".Location"
-            android:exported="false" />
-        <activity
             android:name=".Settings"
             android:exported="false" />
         <activity
