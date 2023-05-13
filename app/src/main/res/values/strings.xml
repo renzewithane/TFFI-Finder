@@ -69,5 +69,8 @@
     <string name="strTrash">Trash</string>
     <string name="strLocation">Location</string>
     <string name="strPet_profile">Pet Profile</string>
+    <string name="show_location">Show Location</string>
+    <string name="location">Location</string>
+    <string name="radar">Radar</string>
 
 </resources>

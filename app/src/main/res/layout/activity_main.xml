@@ -33,7 +33,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.205"
-        app:srcCompat="@drawable/tffi_logo" />
+        app:srcCompat="@drawable/tffi_logo"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/title"
